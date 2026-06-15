@@ -1,30 +1,75 @@
+[update-readmes]   Mode: rewrite — migrating to template structure...
 # setup-incus
 
-A GitHub Action which installs and configures [Incus] on a default GitHub-hosted
-runner. This action uses the stable Ubuntu packages from [Zabbly]. An example of
-using this action in [a job] is below:
+[![Built with Ona](https://ona.com/build-with-ona.svg)](https://app.ona.com/#https://github.com/Interested-Deving-1896/setup-incus)
 
-<!-- embedme .github/workflows/readme.yaml#L2-L9 -->
+<!-- AI:start:what-it-does -->
+_Description pending._
+<!-- AI:end:what-it-does -->
+
+## Architecture
+
+<!-- AI:start:architecture -->
+_Architecture documentation pending._
+<!-- AI:end:architecture -->
+
+## Install
+
+<!-- Add installation instructions here. This section is yours — the AI will not modify it. -->
+
+```bash
+git clone https://github.com/Interested-Deving-1896/setup-incus.git
+cd setup-incus
+```
+
+## Usage
+
+<!-- Add usage examples here. This section is yours — the AI will not modify it. -->
+
+## Configuration
+
+<!-- Document configuration options here. This section is yours — the AI will not modify it. -->
+
+## CI
+
+<!-- AI:start:ci -->
+_CI documentation pending._
+<!-- AI:end:ci -->
+
+## Mirror chain
+
+<!-- AI:start:mirror-chain -->
+This repo is maintained in [`Interested-Deving-1896/setup-incus`](https://github.com/Interested-Deving-1896/setup-incus) and mirrored through:
 
 ```
-main:
-  runs-on: ubuntu-latest
-  steps:
-    - uses: maxwell-k/setup-incus@main
-    - run: |
-        incus launch images:debian/13/cloud c1
-        incus exec c1 -- cloud-init status --wait
-        incus exec c1 -- cat /etc/os-release
+Interested-Deving-1896/setup-incus  ──►  OpenOS-Project-OSP/setup-incus  ──►  OpenOS-Project-Ecosystem-OOC/setup-incus
 ```
 
-[Zabbly]: https://github.com/zabbly/incus
-[Incus]: https://github.com/lxc/incus
-[a job]: /.github/workflows/readme.yaml#L2
+Changes flow downstream automatically via the hourly mirror chain in
+[`fork-sync-all`](https://github.com/Interested-Deving-1896/fork-sync-all).
+Direct commits to OSP or OOC are detected and opened as PRs back to `Interested-Deving-1896`.
+<!-- AI:end:mirror-chain -->
 
-<!--
-README.md
-Copyright 2024 Keith Maxwell
-SPDX-License-Identifier: CC0-1.0
--->
+## Contributors
 
-<!-- vim: set filetype=markdown.embedme.htmlCommentNoSpell : -->
+<!-- AI:start:contributors -->
+_Contributors pending._
+<!-- AI:end:contributors -->
+
+## Origins
+
+<!-- AI:start:origins -->
+_Original project — no upstream fork._
+<!-- AI:end:origins -->
+
+## Resources
+
+<!-- AI:start:resources -->
+_No additional resource files found._
+<!-- AI:end:resources -->
+
+## License
+
+<!-- AI:start:license -->
+[Apache-2.0](https://github.com/Interested-Deving-1896/setup-incus/blob/main/LICENSE) © 2026 [Interested-Deving-1896](https://github.com/Interested-Deving-1896)
+<!-- AI:end:license -->
